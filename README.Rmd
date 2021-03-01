@@ -18,14 +18,14 @@ knitr::opts_chunk$set(
 <!-- badges: start -->
 <!-- badges: end -->
 
-The goal of the hw04pcshoffmann package is to provide Christopher Hoffmann's implementation of hw04 for STAT-413 (Data Science). It includes two functions: `cshSequence()` and `cshPlot()` which utilizes the previous function.
+The goal of the hw04pcshoffmann package is to provide Christopher Hoffmann's implementation of hw04 for STAT-413 (Data Science). It includes two functions: `cshSequence()` and `cshPlot()`.
 
 ## Installation
 
-You can install the released version of hw04pcshoffmann from GitHub:
+You can install the released version of hw04pcshoffmann from GitHub using the `devtools` package:
 
 ``` r
-install_github("STAT-413-613-21S/hw04pcshoffmann")
+devtools::install_github("STAT-413-613-21S/hw04pcshoffmann")
 ```
 
 ## Functions
