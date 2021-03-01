@@ -12,7 +12,7 @@ cshSequence(x, n)
 \item{n}{an integer denoting the nth element of a sequence}
 }
 \value{
-the value of the nth element of the recurse sequence
+the value of the nth element of the recursive sequence
 }
 \description{
 The function takes two parameters: a vector of three numbers and an integer denoting the nth element of a recursive
