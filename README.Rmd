@@ -18,7 +18,7 @@ knitr::opts_chunk$set(
 <!-- badges: start -->
 <!-- badges: end -->
 
-The goal of hw04pcshoffmann is to provide Christopher Hoffmann's implementation of hw04 for STAT-413 (Data Science)
+The goal of the hw04pcshoffmann package is to provide Christopher Hoffmann's implementation of hw04 for STAT-413 (Data Science). It includes two functions: `cshSequence()` and `cshPlot()` which utilizes the previous function.
 
 ## Installation
 
@@ -28,27 +28,36 @@ You can install the released version of hw04pcshoffmann from GitHub:
 install_github("STAT-413-613-21S/hw04pcshoffmann")
 ```
 
-## Example
+## Functions
 
-This is a basic example which shows you how to solve a common problem:
+### cshSequence
 
-```{r example}
+The function `cshSequence()` utilizes a recursive function to find the value of the nth element in a sequence. The parameters are a numeric vector of *exactly* three elements (x) and an integer (n) denoting the final element of the sequence.
+
+```{r}
 library(hw04pcshoffmann)
-## basic example code
+
+cshSequence(c(2, 4, 3), 7)
+```
+### cshPlot
+
+The function `cshPlot()` will return a line plot of all the elements in a sequence and its respective value in that sequence. It takes a data frame (df) consisting of four columns. The first three columns should represent the first three numbers of a sequence, and the final column indicates the last element of the sequence.
+
+```{r}
+my_data <- tibble::tribble(
+  ~x, ~y, ~z, ~n,
+  2,4,3,3,
+  2,4,3,4,
+  2,4,3,5,
+  2,4,3,6,
+  2,4,3,7,
+  2,4,3,8,
+  2,4,3,9,
+  2,4,3,10,
+  2,4,3,12)
+
+cshPlot(my_data)
 ```
 
-What is special about using `README.Rmd` instead of just `README.md`? You can include R chunks like so:
 
-```{r cars}
-summary(cars)
-```
 
-You'll still need to render `README.Rmd` regularly, to keep `README.md` up-to-date. `devtools::build_readme()` is handy for this. You could also use GitHub Actions to re-render `README.Rmd` every time you push. An example workflow can be found here: <https://github.com/r-lib/actions/tree/master/examples>.
-
-You can also embed plots, for example:
-
-```{r pressure, echo = FALSE}
-plot(pressure)
-```
-
-In that case, don't forget to commit and push the resulting figure files, so they display on GitHub and CRAN.
