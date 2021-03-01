@@ -1,3 +1,28 @@
+#' Produces plot of a sequence's elements and value
+#'
+#' This function takes a data frame of four columns. The first three act as columns act as the first three
+#' numbers of a sequence and the final column is the target nth element of the sequence. The function will then
+#' find the value of all n elements in the sequence, and produce a line plot of its value against element n.
+#'
+#' @param df a data frame consisting of four columns: first three as elements in a sequence and the
+#' fourth as the final element n.
+#'
+#' @return a line plot of each element in a recursive sequence and its respective value
+#' @export cshPlot
+#'
+#' @examples my_data <- tibble::tribble(
+#' ~x, ~y, ~z, ~n,
+#' 2,4,3,3,
+#' 2,4,3,4,
+#' 2,4,3,5,
+#' 2,4,3,6,
+#' 2,4,3,7,
+#' 2,4,3,8,
+#' 2,4,3,9,
+#' 2,4,3,10,
+#' 2,4,3,12)
+#'
+#' cshPlot(my_data)
 cshPlot <- function(df){
   stopifnot(length(df) == 4) # data frame must have 4 columns
 
