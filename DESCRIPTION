@@ -21,3 +21,5 @@ Suggests:
     knitr,
     rmarkdown
 Language: en-US
+URL: https://github.com/STAT-413-613-21S/hw04pcshoffmann
+BugReports: https://github.com/STAT-413-613-21S/hw04pcshoffmann/issues
