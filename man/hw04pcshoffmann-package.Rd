@@ -8,6 +8,14 @@
 \description{
 Package intended for hw04 of STAT-413 (Data Science).
 }
+\seealso{
+Useful links:
+\itemize{
+  \item \url{https://github.com/STAT-413-613-21S/hw04pcshoffmann}
+  \item Report bugs at \url{https://github.com/STAT-413-613-21S/hw04pcshoffmann/issues}
+}
+
+}
 \author{
 \strong{Maintainer}: Christopher Hoffmann \email{ch7710a@student.american.edu} (\href{https://orcid.org/YOUR-ORCID-ID}{ORCID})
 
